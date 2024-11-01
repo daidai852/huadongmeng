@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>代金凤074</title>
+    <style>
+      .chujihezi{
+            width: 100px;
+            height: 600px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+      .chujiliebiao{
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+      .chujiliebiao>li{
+            list-style: none;
+            margin: 5px 0;
+            width: 100px;
+            height: 40px;
+            background-color: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+      .erjihezi{
+            position: absolute;
+            top: 20;
+            left: 940px;
+            width: 300px;
+            height: 40px;
+            background-color: #eee;
+            border-radius: 5px;
+            display: none;
+
+            justify-content: space-around;
+            align-items: center;
+        }
+      .erjiliebiao{
+            padding: 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+      .erjiliebiao li{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0px;
+            width: 80px;
+            height: 30px;
+
+        }
+      .chujiliebiao>li:hover>.erjihezi{
+            display: flex;
+            background-color: #ccc;
+            color: white;
+        }
+      .chujiliebiao>li:hover>.erjihezi a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="chujihezi">
+        <ul class="chujiliebiao">
+            <li>
+                <a href="#">百货</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">纸巾</a></li>
+                        <li><a href="#">餐具</a></li>
+                        <li><a href="#">清洁</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">美妆</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">护肤</a></li>
+                        <li><a href="#">底妆</a></li>
+                        <li><a href="#">彩妆</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">食品</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">乳品</a></li>
+                        <li><a href="#">粮油</a></li>
+                        <li><a href="#">保健</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
